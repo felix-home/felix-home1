@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script data-main="./dist/js/config.js" src="./dist/js/require.js"></script>
+    <script src="./dist/js/bmob-min.js"></script>
+    <link href="./dist/css/style.css" type="text/css" rel=stylesheet>
+    <script src="./dist/js/main.js"></script>
+</head>
+<!-- justify-content-around -->
+
+<body>
+    <div class="container container col-xs-offset-1">
+        <div class="row justify-content-start">
+            <!-- <div class="col-xs-4">
+                <label for="name" class="form-label control-label">姓名:</label>
+                <input type="text" name="name" id="name" required="required">
+            </div>
+            <div class="col-xs-offset-1 col-xs-1">
+                <label for="sex" class="form-label control-label">性别:</label>
+                <select class="form-control input-sm" id="sex">
+                    <option>男</option>
+                    <option>女</option>
+                </select>
+            </div> -->
+        </div>
+        <div class="row col-xs-4">
+            <div style="padding: 5px 1px 10px;">
+                <form class="bs-example bs-example-form" role="form">
+                    <div class="input-group">
+                        <span class="input-group-addon">姓 名</span>
+                        <input type="text" class="form-control" placeholder="姓名">
+                    </div>
+                    <br>
+                    <div class="input-group col-xs-4 ">
+                        <span class="input-group-addon ">性别</span>
+                        <select class="form-control input-sm " id="sex ">
+                            <option>男</option>
+                            <option>女</option>
+                        </select>
+                        <!-- <input type="text " class="form-control " placeholder="twitterhandle "> -->
+                    </div>
+                    <br>
+                    <div class="input-group ">
+                        <span class="input-group-addon ">组织机构</span>
+                        <input type="text " class="form-control " placeholder="twitterhandle ">
+                    </div>
+                    <br>
+                    <div class="input-group ">
+                        <span class="input-group-addon ">职务</span>
+                        <input type="text " class="form-control " placeholder="twitterhandle ">
+                    </div>
+                    <br>
+                    <div class="input-group ">
+                        <span class="input-group-addon ">地址</span>
+                        <input type="text " class="form-control " placeholder="twitterhandle ">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- <div class="row justify-content-start ">
+            <div class="col-xs-offset-0 col-xs-1 ">
+                <label for="sex " class="control-label ">性别:</label>
+                <select class="form-control input-sm " id="sex ">
+                    <option>男</option>
+                    <option>女</option>
+                </select>
+            </div>
+        </div> 
+         <div class="row justify-content-start ">
+            <div class="col-xs-4 ">
+                <label for="organization " class="control-label ">组织机构:</label>
+                <input type="text " name="organization " id="organization ">
+
+            </div>
+        </div>
+        <div class="row justify-content-start ">
+            <div class="col-xs-4 ">
+                <label for="duty " class="control-label ">职务:</label>
+                <input type="text " name="duty " id="duty ">
+            </div>
+        </div>
+        <div class="row justify-content-start ">
+            <div class="col-xs-4 ">
+                <label for="address " class="control-label ">地址:</label>
+                <input type="text " name="address " id="address ">
+            </div>
+        </div>
+
+        <div class="form-group ">
+            <div class="row ">
+                <div class="col-md-10 ">
+                    <label for="selectedPrinter ">{{printLabelTask.printTaskTypeCode}} Printer</label>
+                    <select class="form-control " [(ngModel)]="printLabelTask.selectedPrinter " id="selectedPrinter
+                            " name="selectedPrinter ">
+                        <option [ngValue]=" "></option>
+                        <option *ngFor="let printer of printLabelTask.printers " value="{{printer.printerName}} ">
+                            {{printer.printerName}} - {{printer.printerDescription}}(Plant Code: {{printer.plantCode}}, Location: {{printer.location}})
+                        </option>
+                    </select>
+                </div>
+                <div class="col-md-2 ">
+                    <label for="printQty ">Qty</label>
+                    <input class="form-control rightjustified " type="number " min="0 " [(ngModel)]="printLabelTask.printQty
+                            " required style="width:65px "
+                        id="printQty " name="printQty " (change)=sumPrintQty()/>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+</body>
+
+</html>
