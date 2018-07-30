@@ -1,6 +1,10 @@
 function Query() {
     console.log(1);
     var currentUser = Bmob.User.current();
+    if(currentUser == null){
+        Bmob.User.logOut();
+        $(location).attr('href', './login.html');
+    }
     var User = Bmob.Object.extend("User");
     var query = new Bmob.Query(User);
     query.find({
