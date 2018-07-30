@@ -1,27 +1,43 @@
 $(function () {
-
-        var user = new Bmob.User();
-        user.set("username", "b");
-        user.set("password", "123");
-        //user.set("email", "email@example.com");
-        // other fields can be set just like with Bmob.Object
-        //user.set("phone", "415-392-0202");
-        user.signUp(null, {
-            success: function (user) {
-                // Hooray! Let them use the app now.
-                var currentUser = Bmob.User.current();
-                console.log(currentUser);
-                
-                console.log(currentUser.attributes.username);
-              // alert("register success!");
-            },
-            error: function (user, error) {
-                // Show the error message somewhere and let the user try again.
-                alert("Error: " + error.code + " " + error.message);
-            }
-        });
-
+    console.log(1);
+    $('#save').click(function () {
+        console.log(2);
+      var name= $('#name').val();
+      //var sex =$('#sex option:selected') .val();
+      //var sex= $('#sex').val();
+      var options=$("#sex option:selected"); 
+      console.log(options); 
+     // var sex = document.getElementById("sex").value;  
+      console.log(options.val()); 
+      console.log(name);
+      alert("name:"+name+" "+"sex:"+options.val());
+      
+    });
 });
+// $(function () {
+
+//         var user = new Bmob.User();
+//         user.set("username", "b");
+//         user.set("password", "123");
+//         //user.set("email", "email@example.com");
+//         // other fields can be set just like with Bmob.Object
+//         //user.set("phone", "415-392-0202");
+//         user.signUp(null, {
+//             success: function (user) {
+//                 // Hooray! Let them use the app now.
+//                 var currentUser = Bmob.User.current();
+//                 console.log(currentUser);
+                
+//                 console.log(currentUser.attributes.username);
+//               // alert("register success!");
+//             },
+//             error: function (user, error) {
+//                 // Show the error message somewhere and let the user try again.
+//                 alert("Error: " + error.code + " " + error.message);
+//             }
+//         });
+
+// });
 // function test(){
 //     var currentUser = Bmob.User.current();
 //     console.log(currentUser);

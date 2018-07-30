@@ -17,12 +17,18 @@
 </head>
 
 <body>
- <script>
-    var currentUser = Bmob.User.current();
-    console.log(currentUser);
-    </script>
+    <form>
+        <input id="name">
+        <span class="input-group-addon ">性别</span>
+        <select class="form-control input-sm " id="sex">
+            <option value="">请选择</option>
+            <option value="男">男</option>
+            <option value="女">女</option>
+        </select>
+        <button type="submit" id="save">保存</button>
+    </form>
 </body>
 
-</html>
+
 
 </html>

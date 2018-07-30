@@ -1,8 +1,8 @@
 function Query() {
     console.log(1);
     var currentUser = Bmob.User.current();
-    var UserData = Bmob.Object.extend("UserData");
-    var query = new Bmob.Query(UserData);
+    var User = Bmob.Object.extend("User");
+    var query = new Bmob.Query(User);
     query.find({
         success: function (results) {
             var html = "";

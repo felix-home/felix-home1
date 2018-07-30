@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <span style="font-size:18px;"><!doctype html>
+        <html lang="en">
+         <head>
+          <meta charset="UTF-8">
+          <title>Document</title>
+          <script type="text/javascript" src="jquery.js"></script>
+         </head>
+         <body>
+          获取和设置input的值：<input type='hidden' id='provSelect1' name='provSelect1' runat='server' value='111' />
+          <br>
+          <input type="text" id="i" value="222"/>
+        <script>
+            $(document).ready(function(){
+                $("#i").val("123");
+                //document.getElementById("i").innerHTML="New text!";
+                var value=document.getElementById("i");
+                value.value="456";
+            });
+            window.onload = function(){
+                var psel = document.getElementById("provSelect1");
+                // alert("获取到的value：" + psel.value+" ,"+$("#provSelect1").val()); //获取
+                psel.value = "123"; //设置
+                
+                // alert("设置后的value：" + psel.value); //设置后的
+            };
+         
+            $(document).ready(function(){
+                var val = $("#provSelect1").val(); //获取
+                // alert("获取到的value：" + val); 
+                $("#provSelect1").val("123"); //设置
+                // alert("设置后的value：" + $("#provSelect1").val());
+            });
+        </script>
+         </body>
+        </html></span>
+        
+</body>
+</html>
